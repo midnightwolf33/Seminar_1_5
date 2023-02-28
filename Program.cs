@@ -1,15 +1,19 @@
 ﻿// Задача 5
-
-int ThirdDigit(int number)
+{
+int num;
+Console.WriteLine("ВВедите трехзначное число: ");
+num = Convert.ToInt32(Console.ReadLine());
         {
             int result = -1;
-            if (number >= 100)
+            if (num >= 100)
             {
-                while (number > 999)
+                while (num > 999)
                 {
-                    number = number / 10;
+                    num = num / 10;
                 }
-                result = number % 10;
+                result = num % 10;
             }
             return result; 
         }
+        Console.ReadLine();
+}
